@@ -94,4 +94,48 @@ func main() {
 	for _, v := range b {
 		fmt.Println(v)
 	}
+
+	//slices basically a dynamic array
+
+	results := []int{1, 2}
+
+	fmt.Println(results, results[1], results[len(results)-1])
+
+	//can create a slice using make() function
+
+	scores := make([]int, 0)
+	fmt.Println(scores)
+
+	for i := 0; i < 15; i++ {
+		scores = append(scores, i)
+	}
+
+	fmt.Println(scores)
+
+	// creating maps = map[keyType]valueType
+
+	ages := map[string]int{
+		"shams":    23,
+		"pahlowan": 20,
+		"soad":     21,
+	}
+
+	for i, v := range ages {
+		fmt.Println(i, v)
+	}
+
+	ages["hello"] = 34
+	for i, v := range ages {
+		fmt.Println(i, v)
+	}
+	delete(ages, "hello")
+
+	for i, v := range ages {
+		fmt.Println(i, v)
+	}
+
+	val, ok := ages["hello"]
+
+	fmt.Println(val, ok)
+
 }
