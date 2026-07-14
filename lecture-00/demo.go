@@ -138,4 +138,19 @@ func main() {
 
 	fmt.Println(val, ok)
 
+	addition := add(4, 5)
+	fmt.Println(addition)
+
+	addd, sub, mult, div := calculate(9, 5)
+
+	fmt.Println(addd, sub, mult, div)
+
+}
+
+func add(a int, b int) int {
+	return a + b
+}
+
+func calculate(a int, b int) (add int, subs int, mullt int, dive int) {
+	return a + b, a - b, a * b, a / b
 }
