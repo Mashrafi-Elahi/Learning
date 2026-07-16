@@ -4,6 +4,7 @@
 
 - [Golang full course](https://youtu.be/DR4QhvIlFfQ?si=dfoqlGJj5qEun893)
 - [Go Programming](https://youtu.be/V-lI7AmusGs?si=bMR1uCmc910nEfKx)
+- [Projects to build](https://youtu.be/jFfo23yIWac?si=gkD9W_uzRo88Nnw8)
 
 ## Websites
 
