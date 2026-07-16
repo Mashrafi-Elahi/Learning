@@ -1,4 +1,6 @@
-## YouTube Resources
+# Resources
+
+## YouTube
 
 - [Golang full course](https://youtu.be/DR4QhvIlFfQ?si=dfoqlGJj5qEun893)
 - [Go Programming](https://youtu.be/V-lI7AmusGs?si=bMR1uCmc910nEfKx)
