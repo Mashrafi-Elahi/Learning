@@ -28,22 +28,22 @@ func somethingWithTime(a int, b int, ch chan<- int) {
 
 func main() {
 
-	// c := Counter{counter: 0}
-	// wg := sync.WaitGroup{}
+	c := Counter{counter: 0}
+	wg := sync.WaitGroup{}
 
-	// for i := 0; i < 100; i++ {
-	// 	wg.Add(1)
-	// 	go run(&c, &wg)
-	// }
+	for i := 0; i < 100; i++ {
+		wg.Add(1)
+		go run(&c, &wg)
+	}
 
-	// wg.Wait()
-	// fmt.Println("done tha task")
+	wg.Wait()
+	fmt.Println("done tha task")
 
-	ch := make(chan int)
+	// ch := make(chan int)
 
-	go somethingWithTime(1000000, 100000, ch)
+	// go somethingWithTime(1000000, 100000, ch)
 
-	x := <-ch
-	fmt.Println(x)
+	// x := <-ch
+	// fmt.Println(x)
 
 }

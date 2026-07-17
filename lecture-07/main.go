@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 
 	// Declare variable of type int with a value of 10.
@@ -24,6 +28,16 @@ func main() {
 	// Print out the "value of" and "address of" count.
 	// The value of count has changed after the function call.
 	println("count:\tValue Of[", count, "]\tAddr Of[", &count, "]")
+
+	const (
+		a = iota
+		b
+		_
+		d
+	)
+
+	fmt.Println(a, b, d)
+
 }
 
 // increment1 declares the function to accept its own copy of
